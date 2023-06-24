@@ -4,6 +4,9 @@
 - <https://assetstore.unity.com/packages/tools/input-management/lean-touch-30111>
 - <https://assetstore.unity.com/packages/tools/gui/lean-gui-72138>
 
+## 참고
+- <https://carloswilkes.com/Documentation/LeanTouch>
+
 ## 유니티 에디터 버전
 - 2021.3.15f
 
