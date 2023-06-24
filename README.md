@@ -36,3 +36,4 @@
 - New Input System 적용 방법
   - Package Manager - Unity Registry - Input System 설치
   - Project Settings - Player - Other Settings - Configuration - Active Input Handling - `Input System Package (new)`로 변경
+  - 씬의 EventSystem 게임오브젝트 - Standalone Input Module 컴포넌트 - `Replace with InputSystemUIInputModule` 버튼 클릭
