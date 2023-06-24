@@ -8,7 +8,7 @@
 - 2021.3.15f
 
 ## 미리보기
-- .
+<img src="https://github.com/rito15/Demo_Unity-Mobile-Controller/blob/main/Gif/2023_0624_MobileController.gif">
 
 ## 기능
 - 모바일 조작
