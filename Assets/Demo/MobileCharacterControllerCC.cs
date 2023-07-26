@@ -13,6 +13,7 @@ namespace Rito.Demo.MobileControl
         public Transform _camTr;
         public Lean.Gui.LeanJoystick _joystick;
         public TouchTranslateInput _touchTranslateInput;
+        public WasdInput _wasdInput;
         public TouchPinchInput _touchPinchInput;
 
         [Header("Options")]
@@ -44,7 +45,10 @@ namespace Rito.Demo.MobileControl
             _ccCurrentGravity = _cc.isGrounded ? 0f : (_ccCurrentGravity - _gravity * d);
 
             Vector2 j = _joystick.ScaledValue;
-            Vector3 move = new Vector3(j.x, _ccCurrentGravity, j.y);
+            Vector2 w = _wasdInput.ScaledValue;
+            Vector2 v = j.sqrMagnitude > w.sqrMagnitude ? j : w;
+
+            Vector3 move = new Vector3(v.x, _ccCurrentGravity, v.y);
             Vector3 worldMove = _rotRigTr.TransformDirection(move);
 
             _cc.Move(_moveSpeed * d * worldMove);
